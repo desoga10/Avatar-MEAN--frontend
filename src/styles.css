@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+.avatar {
+  font-size: 0
+}
+
+.avatar-list {
+  display: inline-block;
+  width: 12.5%;
+  margin: 0;
+  position: relative
+}
+
+.avatar-list.active:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #2d353c;
+  margin-left: -10px
+}
+
+.avatar-show {
+  text-align: center;
+  position: relative;
+  background: #2d353c;
+  width: 100%;
+  float: left;
+  padding: 25px;
+  display: none
+}
+
+.avatar-img {
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer
+}
+
+.avatar-current-img {
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, .65);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, .65);
+  max-width: 100%
+}
+
+.avatar-img:hover {
+  opacity: .8
+}
+
+.avatar-close {
+  opacity: .7;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 35px;
+  height: 35px
+}

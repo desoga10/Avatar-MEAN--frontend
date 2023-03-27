@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="avatar">
+    <div *ngFor="let avatar of avatars" class="avatar-list">
+      <img src={{avatar.avatar}} alt="" class="avatar-img" width="140" height="140" data-bs-target="#staticBackdrop"
+        data-bs-toggle="modal" (click)="modalData(avatar)">
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <app-modal [avatar]="avatarData"></app-modal>
+</div>

@@ -1,0 +1,14 @@
+<form [formGroup]="editAvatarForm" (ngSubmit)="onSubmit()">
+  <div class="mt-5 container d-flex flex-column align-items-center justify-content-center">
+
+    <div class="col-4">
+      <input type="text" class="form-control" placeholder="avatar name" formControlName="name">
+    </div>
+    <br />
+
+    <div class="mb-3 col-4">
+      <input type="file" class="form-control" placeholder="avatar name" (change)="uploadAvatar($event)">
+    </div>
+    <button class="btn btn-success">Submit Avatar</button>
+  </div>
+</form>
